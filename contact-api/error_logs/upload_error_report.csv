@@ -1,0 +1,147 @@
+Row,Error Type,Details
+1,Duplicate Email,alice.brown@exa2mple.com
+1,Duplicate Email,alice.brown@exa2mple.com
+1,Duplicate Email,alice.brown@exa2mple.com
+1,Invalid Data,Name: undefined, Email: undefined
+2,Invalid Data,Name: undefined, Email: undefined
+3,Invalid Data,Name: undefined, Email: undefined
+4,Invalid Data,Name: undefined, Email: undefined
+5,Invalid Data,Name: undefined, Email: undefined
+6,Invalid Data,Name: undefined, Email: undefined
+7,Invalid Data,Name: undefined, Email: undefined
+8,Invalid Data,Name: undefined, Email: undefined
+9,Invalid Data,Name: undefined, Email: undefined
+10,Invalid Data,Name: undefined, Email: undefined
+1,Invalid Data,Name: undefined, Email: undefined
+2,Invalid Data,Name: undefined, Email: undefined
+3,Invalid Data,Name: undefined, Email: undefined
+4,Invalid Data,Name: undefined, Email: undefined
+5,Invalid Data,Name: undefined, Email: undefined
+6,Invalid Data,Name: undefined, Email: undefined
+7,Invalid Data,Name: undefined, Email: undefined
+8,Invalid Data,Name: undefined, Email: undefined
+9,Invalid Data,Name: undefined, Email: undefined
+10,Invalid Data,Name: undefined, Email: undefined
+1,Invalid Data,Name: undefined, Email: undefined
+2,Invalid Data,Name: undefined, Email: undefined
+3,Invalid Data,Name: undefined, Email: undefined
+4,Invalid Data,Name: undefined, Email: undefined
+5,Invalid Data,Name: undefined, Email: undefined
+6,Invalid Data,Name: undefined, Email: undefined
+7,Invalid Data,Name: undefined, Email: undefined
+8,Invalid Data,Name: undefined, Email: undefined
+9,Invalid Data,Name: undefined, Email: undefined
+10,Invalid Data,Name: undefined, Email: undefined
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+4,Duplicate Email,emily.davis@example.com
+5,Duplicate Email,david.wilson@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,john.doe@example.com
+2,Duplicate Email,jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,robert.green@example.com
+9,Duplicate Email,william.harris@example.com
+10,Duplicate Email,olivia.clark@example.com
+1,Duplicate Email,sophia.1wilson@example.com
+1,Duplicate Email,sophia.1wilson@example.com
+1,Duplicate Email,sophia.1wilson@example.com
+1,Duplicate Email,sophia.1wilson@example.com
+1,Invalid Data,Name: Jane Smith, Email: jane.smith@example.com
+3,Duplicate Email,michael.brown@example.com
+4,Duplicate Email,olivia.clark@example.com
+5,Duplicate Email,robert.green@example.com
+6,Duplicate Email,sarah.lee@example.com
+7,Duplicate Email,sophia.1wilson@example.com
+8,Duplicate Email,william.harris@example.com
+1,Invalid Data,Name: Jane Smith, Email: jane.smith@example.com
+2,Invalid Data,Name: John Doe, Email: john.doe@example.com
+3,Invalid Data,Name: Michael Brown, Email: michael.brown@example.com
+4,Invalid Data,Name: Olivia Clark, Email: olivia.clark@example.com
+5,Invalid Data,Name: Robert Green, Email: robert.green@example.com
+6,Invalid Data,Name: Sarah Lee, Email: sarah.lee@example.com
+7,Invalid Data,Name: Sophia Wilson1      , Email: sophia.1wilson@example.com
+8,Invalid Data,Name: William Harris, Email: william.harris@example.com
+1,Duplicate Email,john.smith@email.com
+2,Duplicate Email,sarah.lee@email.com
+3,Duplicate Email,mike.brown@email.com
+4,Duplicate Email,emily.clark@email.com
+5,Duplicate Email,david.johnson@email.com
+6,Duplicate Email,laura.white@email.com
+7,Duplicate Email,robert.king@email.com
+8,Duplicate Email,jessica.lee@email.com
