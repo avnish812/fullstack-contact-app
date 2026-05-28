@@ -1,0 +1,231 @@
+<div class="filter-container">
+
+
+  <!-- SEARCH -->
+
+  @if(enableSearch){
+
+    <mat-form-field appearance="outline">
+
+      <mat-label>
+
+        {{ placeholder }}
+
+      </mat-label>
+
+
+      <input
+        matInput
+
+        [value]="searchValue"
+
+        (input)="
+          onInputChange(
+            $any($event.target).value
+          )
+        "
+
+        (keyup.enter)="
+          searchNow()
+        ">
+
+
+      <!-- CLEAR -->
+
+      @if(searchValue){
+
+        <button
+
+          matSuffix
+
+          mat-icon-button
+
+          type="button"
+
+          (click)="clearSearch()">
+
+          <mat-icon>
+
+            close
+
+          </mat-icon>
+
+        </button>
+      }
+
+    </mat-form-field>
+  }
+
+
+
+  <!-- STATUS -->
+
+  @if(enableStatusFilter){
+
+    <mat-form-field appearance="outline">
+
+      <mat-label>
+
+        Status
+
+      </mat-label>
+
+      <mat-select
+
+        multiple
+
+        (selectionChange)="
+          onSelectionChange(
+            $event.value,
+            'status'
+          )
+        ">
+
+        @for(
+          item of status;
+          track item
+        ){
+
+          <mat-option
+            [value]="item">
+
+            {{ item }}
+
+          </mat-option>
+        }
+
+      </mat-select>
+
+    </mat-form-field>
+  }
+
+
+
+  <!-- CURRENCY -->
+
+  @if(enableCurrencyFilter){
+
+    <mat-form-field appearance="outline">
+
+      <mat-label>
+
+        Currency
+
+      </mat-label>
+
+      <mat-select
+
+        multiple
+
+        (selectionChange)="
+          onSelectionChange(
+            $event.value,
+            'currency'
+          )
+        ">
+
+        @for(
+          item of currencies;
+          track item
+        ){
+
+          <mat-option
+            [value]="item">
+
+            {{ item }}
+
+          </mat-option>
+        }
+
+      </mat-select>
+
+    </mat-form-field>
+  }
+
+
+
+  <!-- PAYMENT MODE -->
+
+  @if(enablePaymentModeFilter){
+
+    <mat-form-field appearance="outline">
+
+      <mat-label>
+
+        Payment Mode
+
+      </mat-label>
+
+      <mat-select
+
+        multiple
+
+        (selectionChange)="
+          onSelectionChange(
+            $event.value,
+            'paymentMode'
+          )
+        ">
+
+        @for(
+          item of paymentModes;
+          track item
+        ){
+
+          <mat-option
+            [value]="item">
+
+            {{ item }}
+
+          </mat-option>
+        }
+
+      </mat-select>
+
+    </mat-form-field>
+  }
+
+
+
+  <!-- SOURCE -->
+
+  @if(enableSourceFilter){
+
+    <mat-form-field appearance="outline">
+
+      <mat-label>
+
+        Source
+
+      </mat-label>
+
+      <mat-select
+
+        multiple
+
+        (selectionChange)="
+          onSelectionChange(
+            $event.value,
+            'source'
+          )
+        ">
+
+        @for(
+          item of sources;
+          track item
+        ){
+
+          <mat-option
+            [value]="item">
+
+            {{ item }}
+
+          </mat-option>
+        }
+
+      </mat-select>
+
+    </mat-form-field>
+  }
+
+</div>
