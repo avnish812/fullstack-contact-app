@@ -1,0 +1,25 @@
+mat-card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 6px 1px, rgba(0, 0, 0, 0.3) 0px 1px 3px !important;
+    .justify-content-between.buttons{
+        margin: 1rem auto;
+    }
+
+}
+td button{
+    color: #4182c3;
+}
+div button.btn{
+    border: 2px solid #4182c3;
+}
+
+.d-flex .w-100 .add-btn{
+    color: #fff;
+    background-color: #4182c3;
+}
+::ng-deep thead{
+    background-color: #4182c3 !important;
+
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }

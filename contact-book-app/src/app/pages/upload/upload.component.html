@@ -1,0 +1,46 @@
+<mat-card class="example-card container" appearance="outlined">
+    <div class="heading">
+        <p class="text-center mt-2 p-2 fs-4 fw-bold">Import Your Excel File to View,
+            Edit and Export </p>
+    </div>
+    <div class="main">
+        <div class="mt-4 mb-5 text-center w-75">
+            <div class="card shadow-lg rounded" class="card-body">
+                <form enctype="multipart/form-data" class="d-flex justify-content-around">
+                    <label class="w-100 h-100 card-body" matTooltip="Upload XlSX File">
+                        <input type="file" (change)="onFileChange($event)"/>
+                        <div class="border-div"></div>
+                        <div class="files-container">
+                            <div class="icons">
+                                <img src="../../../assets/img/xlsx.png" alt="">
+                            </div>
+                            <div class="choose">
+                                <img src="../../../assets/img/add-folder.gif" alt="">
+                                <span>Choose Files</span>
+                            </div>
+                        </div>
+                    </label>
+                </form>
+                <div *ngIf="errorMessage" class="alert alert-danger">
+                    {{ errorMessage }}
+                </div>
+                <div *ngIf="invalidRows.length > 0">
+                    <h5 class="mt-3">Invalid Rows:</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let row of invalidRows">
+                            <strong>{{ row.email }}</strong> - {{ row.phone }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button mat-raised-button [routerLink]="['/contacts']">
+                See the XLSX Data
+            </button>
+            <button *ngIf="errorReportUrl" mat-raised-button (click)="downloadErrorReport()">Download Error
+                Report</button>
+        </div>
+    </div>
+    <app-contacts></app-contacts>
+</mat-card>

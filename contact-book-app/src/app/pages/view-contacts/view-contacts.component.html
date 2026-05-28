@@ -1,0 +1,61 @@
+
+<div mat-dialog-content>
+    <form [formGroup]="viewEditContactForm" (submit)="updateEditContact()">
+        <div class="forms w-80 d-flex justify-content-around">
+            <mat-form-field class="w-30">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" />
+                <mat-error *ngIf="viewEditContactForm.get('name')?.hasError('required')">
+                    Name is required
+                </mat-error>
+                <mat-error *ngIf="viewEditContactForm.get('name')?.hasError('minlength')">
+                    Name must be at least 3 characters long
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="w-30">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" />
+                <mat-error *ngIf="viewEditContactForm.get('email')?.hasError('required')">
+                    Email is required
+                </mat-error>
+                <mat-error *ngIf="viewEditContactForm.get('email')?.hasError('email')">
+                    Please enter a valid email address
+                </mat-error>
+            </mat-form-field>
+
+            <!-- Phone Field -->
+            <mat-form-field class="w-30">
+                <mat-label>Phone</mat-label>
+                <input matInput formControlName="phone" />
+                <mat-error *ngIf="viewEditContactForm.get('phone')?.hasError('required')">
+                    Phone is required
+                </mat-error>
+                <mat-error *ngIf="viewEditContactForm.get('phone')?.hasError('pattern')">
+                    Please enter a valid 10-digit phone number
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Address</mat-label>
+                <input matInput formControlName="address" />
+                <mat-error *ngIf="viewEditContactForm.get('address')?.hasError('required')">
+                    Address is required
+                </mat-error>
+            </mat-form-field>
+            <div>
+                <button mat-icon-button (click)="editContact()">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button (click)="deleteContact()">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div mat-dialog-actions class="float-end">
+            <button mat-raised-button color="primary" >Update</button>
+        </div>
+        <div mat-dialog-actions class="float-end">
+            <button mat-raised-button  mat-dialog-close >Close</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,116 @@
+mat-card .heading{
+    width: 50%;
+    margin: 0 auto;
+    color: #4182c3;
+}
+
+label {
+        background-color: #5899da;
+        position: relative;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 1.16) 0px 2px 4px;
+        background-color: #4182c3;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 5rem;
+        cursor: pointer;
+
+    .border-div{
+        position: absolute;
+        border-radius: 1rem;
+        background-color: #4182c3;
+        display: flex;
+        align-items: center;
+        border: 1px dashed rgb(255, 255, 255);
+        inset: 10px;
+    }
+
+    .files-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .icons img {
+            width: 20%;
+            border-radius: 7rem;
+            transform: translateX(-300%);
+            animation: slideIn 2s forwards
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-300%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .choose {
+            border: 1px solid white;
+            background: white;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 5px;
+            margin: 0 auto;
+            padding: 10px 5px;
+            z-index: 9;
+            transform: translateX(200%);
+            animation: slideButton 2s forwards;
+            span {
+                font-size: 25px;
+                font-weight: 600;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        @keyframes slideButton {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+    }
+
+
+
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+
+    button {
+        padding: 2rem 1rem;
+        font-weight: 500;
+        color: black;
+        border: 5px solid #4182c3;
+        border-radius: 3rem;
+
+        &:hover {
+            background-color: #4182c3;
+            color: white;
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 100%;
+}
+
