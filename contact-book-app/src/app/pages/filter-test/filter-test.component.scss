@@ -1,0 +1,154 @@
+.filter-container {
+
+  display: flex;
+
+  gap: 16px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+
+
+/* FIXED HEADER */
+
+.table-header {
+
+  display: grid;
+
+  grid-template-columns:
+    180px
+    180px
+    180px
+    120px
+    120px
+    150px
+    150px
+    220px
+    150px;
+
+  align-items: center;
+
+  background: #f5f5f5;
+
+  border: 1px solid #ddd;
+
+  border-bottom: none;
+
+  padding: 14px;
+
+  font-weight: 600;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+}
+
+
+
+/* VIEWPORT */
+
+.viewport {
+
+  height: 700px;
+
+  width: 100%;
+
+  border: 1px solid #ddd;
+
+  border-radius: 0 0 8px 8px;
+
+  overflow: auto;
+}
+
+
+
+/* ROW */
+
+.table-row {
+
+  display: grid;
+
+  grid-template-columns:
+    180px
+    180px
+    180px
+    120px
+    120px
+    150px
+    150px
+    220px
+    150px;
+
+  align-items: center;
+
+  padding: 14px;
+
+  border-bottom: 1px solid #eee;
+
+  min-height: 60px;
+
+  box-sizing: border-box;
+}
+
+
+
+/* HOVER */
+
+.table-row:hover {
+
+  background: #fafafa;
+}
+
+
+
+/* STATUS */
+
+.success {
+
+  color: green;
+
+  font-weight: 600;
+}
+
+.failed {
+
+  color: red;
+
+  font-weight: 600;
+}
+
+.pending {
+
+  color: orange;
+
+  font-weight: 600;
+}
+
+.progress {
+
+  color: blue;
+
+  font-weight: 600;
+}
+
+.rejected {
+
+  color: crimson;
+
+  font-weight: 600;
+}
+
+
+
+/* PAGINATOR */
+
+mat-paginator {
+
+  border: 1px solid #ddd;
+
+  border-top: none;
+}

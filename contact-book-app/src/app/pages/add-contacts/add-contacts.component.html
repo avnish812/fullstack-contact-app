@@ -1,0 +1,58 @@
+
+
+<div mat-dialog-content>
+    <header class="container" >
+        <strong>Add New Contacts</strong>
+    </header>
+    <form [formGroup]="addContacts" (submit)="onSubmit()" >
+      <div class="forms w-80 d-flex justify-content-around">
+      <mat-form-field class="w-30">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" />
+        <mat-error *ngIf="addContacts.get('name')?.hasError('required')">
+          Name is required
+        </mat-error>
+        <mat-error *ngIf="addContacts.get('name')?.hasError('pattern')">
+            No spaces allowed at the start or end of the name
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="w-30">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" />
+        <mat-error *ngIf="addContacts.get('email')?.hasError('required')">
+          Email is required
+        </mat-error>
+        <mat-error *ngIf="addContacts.get('email')?.hasError('email')">
+          Please enter a valid email address
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Phone Field -->
+      <mat-form-field class="w-30">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone" />
+        <mat-error *ngIf="addContacts.get('phone')?.hasError('required')">
+          Phone is required
+        </mat-error>
+        <mat-error *ngIf="addContacts.get('phone')?.hasError('pattern')">
+          Please enter a valid 10-digit phone number
+        </mat-error>
+      </mat-form-field>
+  
+      <mat-form-field >
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="address" />
+        <mat-error *ngIf="addContacts.get('address')?.hasError('required')">
+          Address is required
+        </mat-error>
+      </mat-form-field>
+      </div>
+      <div mat-dialog-actions class="float-end">
+          <button mat-button mat-dialog-close>Cancel</button>
+          <button mat-raised-button color="primary" >Submit</button>
+        </div>
+    </form>
+  </div>
+  
+  
+  

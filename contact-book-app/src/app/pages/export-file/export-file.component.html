@@ -1,0 +1,26 @@
+<div mat-dialog-title>Export Contacts</div>
+<div mat-dialog-content>
+  <form [formGroup]="exportForm">
+    <mat-radio-group formControlName="exportType">
+      <div>
+        <mat-radio-button value="all">Export All</mat-radio-button>
+      </div>
+      <div>
+        <mat-radio-button value="filtered">Export Filtered</mat-radio-button>
+      </div>
+    </mat-radio-group>
+
+    <!-- Field selection (always visible) -->
+    <div *ngIf="exportForm.get('exportType')?.value ==='filtered'">
+      <h4>Select fields to export:</h4>
+      <mat-checkbox formControlName="name">Name</mat-checkbox>
+      <mat-checkbox formControlName="email">Email</mat-checkbox>
+      <mat-checkbox formControlName="phone">Phone</mat-checkbox>
+      <mat-checkbox formControlName="address">Address</mat-checkbox>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onExport()">Export</button>
+</div>
