@@ -1,0 +1,31 @@
+name: Angular Frontend CI
+
+on:
+  push:
+    branches:
+      - main
+      - test-contact-app
+      - feature/contact-app-avnish
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: contact-book-app
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Angular App
+        run: npm run build
